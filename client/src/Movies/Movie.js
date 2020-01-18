@@ -5,7 +5,10 @@ const Movie = props => {
   const [movie, setMovie] = useState();
   console.log("Movie props:", props);
   useEffect(() => {
-    const id = movie.find(movie1 => `${movie1.id}` === props.match.params.id);
+    // const id = 1;
+    const id = props.match.params.id;
+    // const id = movie.find(movie1 => `${movie1.id}` === props.match.params.id);
+
     // const id = props.movie.items.find(
     //   movie1 => `${movie1.id}` === props.match.params.id
     // );
